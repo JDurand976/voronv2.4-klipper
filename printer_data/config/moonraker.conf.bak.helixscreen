@@ -42,6 +42,13 @@ type: web
 repo: mainsail-crew/mainsail
 path: ~/mainsail
 
+[update_manager timelapse]
+type: git_repo
+primary_branch: main
+path: ~/moonraker-timelapse
+origin: https://github.com/mainsail-crew/moonraker-timelapse.git
+managed_services: klipper moonraker
+
 [update_manager mainsail-config]
 type: git_repo
 primary_branch: master
@@ -80,21 +87,3 @@ path: ~/klipper-toolchanger-easy
 origin: https://github.com/jwellman80/klipper-toolchanger-easy.git
 managed_services: klipper
 primary_branch: main
-
-[update_manager tapchanger]
-type: git_repo
-path: ~/tapchanger
-origin: https://github.com/viesturz/tapchanger.git
-primary_branch: main
-managed_services: klipper
-
-# HelixScreen Update Manager
-# Added by HelixScreen installer - enables one-click updates from Mainsail/Fluidd
-# NOTE: type: web is used instead of type: zip as a workaround for
-# mainsail-crew/mainsail#2444 (zip type always shows UP-TO-DATE).
-# A systemd path unit handles service restart after Moonraker extracts the update.
-[update_manager helixscreen]
-type: web
-channel: stable
-repo: prestonbrown/helixscreen
-path: /home/pi/helixscreen
