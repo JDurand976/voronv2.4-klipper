@@ -76,7 +76,9 @@
           "output_pin caselight",
           "fan_generic T0_part_fan",
           "heater_fan T0_hotend_fan",
-          "fan_generic T1_part_fan"
+          "fan_generic T1_part_fan",
+          "heater_fan T1_hotend_fan",
+          "fan_generic T2_part_fan"
         ],
         "last_snapshot": {
           "fans": [
