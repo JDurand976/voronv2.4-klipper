@@ -73,7 +73,8 @@
           "heater_bed",
           "extruder",
           "controller_fan controller_fan",
-          "output_pin caselight"
+          "output_pin caselight",
+          "fan_generic T0_part_fan"
         ],
         "last_snapshot": {
           "fans": [
